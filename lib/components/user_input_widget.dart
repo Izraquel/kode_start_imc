@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:imc/theme/app_colors.dart';
 
@@ -38,10 +36,11 @@ class UserInputWidget extends StatelessWidget {
         children: [
           Text(
             title,
-            style: TextStyle(
+            style: const TextStyle(
               color: AppColors.white,
-              fontSize: 14,
-              fontWeight: FontWeight.w900,
+              fontFamily: 'Kanit',
+              fontSize: 18,
+              fontWeight: FontWeight.w400,
             ),
           ),
           Padding(
@@ -71,11 +70,11 @@ class UserInputWidget extends StatelessWidget {
                       width: 48,
                       height: 48,
                       margin: const EdgeInsets.only(left: 21),
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: AppColors.primaryDarkColor,
                         shape: BoxShape.circle,
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.remove,
                         color: AppColors.white,
                         size: 42,
@@ -90,7 +89,7 @@ class UserInputWidget extends StatelessWidget {
                       children: [
                         Text(
                           value.toString(),
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: AppColors.white,
                             fontSize: 50,
                             fontWeight: FontWeight.w900,
@@ -98,7 +97,7 @@ class UserInputWidget extends StatelessWidget {
                         ),
                         Text(
                           measureUnit,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: AppColors.white,
                             fontSize: 14.5,
                             fontWeight: FontWeight.w700,
@@ -123,11 +122,11 @@ class UserInputWidget extends StatelessWidget {
                       width: 48,
                       height: 48,
                       margin: const EdgeInsets.only(right: 21),
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: AppColors.primaryDarkColor,
                         shape: BoxShape.circle,
                       ),
-                      child: Icon(
+                      child: const Icon(
                         Icons.add,
                         color: AppColors.white,
                         size: 42,
