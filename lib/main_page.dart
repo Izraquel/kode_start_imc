@@ -24,7 +24,7 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBarWidget(
+      appBar: const AppBarWidget(
         leftIcon: Icon(
           Icons.person,
           color: AppColors.white,

@@ -28,11 +28,14 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                 child: Column(
                   children: [
                     Image.asset('assets/images/logo.png'),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10),
+                    const Padding(
+                      padding: EdgeInsets.only(top: 10),
                       child: Text(
                         'CALCULADORA DE IMC',
                         style: TextStyle(
+                          fontFamily: 'Kanit',
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
                           color: AppColors.white,
                         ),
                       ),
@@ -40,7 +43,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
                   ],
                 ),
               ),
-              Icon(
+              const Icon(
                 Icons.menu,
                 color: AppColors.white,
               ),
